@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <circle cx="100" cy="100" r="90" fill="url(#iconGrad)"/>
+    <g transform="translate(60,60)" fill="#fff">
+        <path d="M40 0 L80 40 L40 80 L0 40 Z"/>
+        <circle cx="40" cy="40" r="15"/>
+    </g>
+</svg>

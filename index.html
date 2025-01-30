@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Cyber Squad - Professional Cybersecurity Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary">X</span> Cyber Squad
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Securing Your Digital Future</h1>
+                    <p class="lead mb-4">Professional cybersecurity services to protect your business from evolving threats</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary btn-lg me-3">Our Services</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-animation">
+                        <div class="cyber-shield">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Our Security Audit Services</h2>
+            <div class="row g-4">
+                <!-- Network Security -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Security</h3>
+                        <p>Comprehensive assessment of network infrastructure, identifying vulnerabilities and ensuring robust security measures.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#networkSecurityModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vulnerability Assessment -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Vulnerability Assessment</h3>
+                        <p>Systematic review of security weaknesses in systems and applications to prevent potential exploits.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#vulnerabilityModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Penetration Testing -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Penetration Testing</h3>
+                        <p>Simulated cyber attacks to evaluate system security and identify potential entry points for attackers.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pentestModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Threat Detection -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-radar"></i>
+                        </div>
+                        <h3>Threat Detection</h3>
+                        <p>Advanced monitoring and analysis to identify and respond to potential security threats in real-time.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#threatModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Data Protection -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Data Protection</h3>
+                        <p>Implementation of encryption and security protocols to protect sensitive data from unauthorized access.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#dataProtectionModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Security Consultant -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Security Consultant</h3>
+                        <p>Expert guidance on security strategies, compliance, and best practices for your organization.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#consultantModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <!-- Network Security Modal -->
+    <div class="modal fade" id="networkSecurityModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Network Security Audit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary mb-3">Comprehensive Network Security Assessment</h6>
+                    <p>Our network security audit provides a thorough evaluation of your organization's network infrastructure, including:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Network architecture review and optimization</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Firewall configuration and rule set analysis</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Network segmentation assessment</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Access control evaluation</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Network traffic analysis</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Wireless network security assessment</li>
+                    </ul>
+                    <p class="mt-3">We employ advanced tools and methodologies to identify potential vulnerabilities and provide actionable recommendations for enhancing your network security posture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vulnerability Assessment Modal -->
+    <div class="modal fade" id="vulnerabilityModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vulnerability Assessment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary mb-3">Systematic Security Weakness Detection</h6>
+                    <p>Our vulnerability assessment service includes:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Automated and manual vulnerability scanning</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Web application security testing</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Configuration review</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Security patch verification</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Risk assessment and prioritization</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Detailed remediation guidance</li>
+                    </ul>
+                    <p class="mt-3">Regular vulnerability assessments help maintain a strong security posture and prevent potential exploits before they occur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Penetration Testing Modal -->
+    <div class="modal fade" id="pentestModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Penetration Testing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary mb-3">Advanced Security Testing</h6>
+                    <p>Our comprehensive penetration testing services include:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>External and internal network penetration testing</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Web application penetration testing</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Mobile application security testing</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Social engineering assessments</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Red team exercises</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Detailed exploitation reports</li>
+                    </ul>
+                    <p class="mt-3">Our expert team simulates real-world attacks to identify security gaps and provide actionable remediation steps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Threat Detection Modal -->
+    <div class="modal fade" id="threatModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Threat Detection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary mb-3">Real-time Threat Monitoring and Response</h6>
+                    <p>Our threat detection service provides:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>24/7 security monitoring</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Advanced threat intelligence</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Behavioral analysis</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Incident response planning</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Security event correlation</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Malware detection and analysis</li>
+                    </ul>
+                    <p class="mt-3">We use AI-powered tools and expert analysis to detect and respond to threats before they impact your business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Protection Modal -->
+    <div class="modal fade" id="dataProtectionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Data Protection and Encryption</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary mb-3">Comprehensive Data Security Solutions</h6>
+                    <p>Our data protection services include:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Data classification and mapping</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Encryption implementation</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Access control management</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Data loss prevention</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Backup and recovery solutions</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Compliance management</li>
+                    </ul>
+                    <p class="mt-3">We ensure your sensitive data remains protected through industry-leading encryption and security protocols.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security Consultant Modal -->
+    <div class="modal fade" id="consultantModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Security Consultation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary mb-3">Expert Security Guidance</h6>
+                    <p>Our security consultation services cover:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Security strategy development</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Compliance assessment and planning</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Security awareness training</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Incident response planning</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Security policy development</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Risk management</li>
+                    </ul>
+                    <p class="mt-3">Our experienced consultants provide strategic guidance to help you build and maintain a robust security program.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Latest Cybersecurity News</h2>
+            <div class="news-sources mb-4">
+                <div class="btn-group" role="group" aria-label="News Sources">
+                    <button type="button" class="btn btn-outline-primary active" data-source="all">All Sources</button>
+                    <button type="button" class="btn btn-outline-primary" data-source="thehackernews">The Hacker News</button>
+                    <button type="button" class="btn btn-outline-primary" data-source="bleepingcomputer">Bleeping Computer</button>
+                    <button type="button" class="btn btn-outline-primary" data-source="threatpost">Threatpost</button>
+                </div>
+            </div>
+            <div id="news-container" class="row">
+                <!-- News items will be dynamically inserted here -->
+            </div>
+            <div class="text-center mt-4">
+                <button id="load-more-news" class="btn btn-outline-primary">Load More News</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-form-container">
+                        <h2 class="display-5 fw-bold mb-4">Get in Touch</h2>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info-container">
+                        <div class="contact-card">
+                            <h3>Visit Our Office</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Rajnigandha Apart opp LIC Flats,<br>Dhantoli, Nagpur 440012</p>
+                            <p><i class="fas fa-phone"></i> +91 9921469609 / 8446986621</p>
+                            <p><i class="fas fa-envelope"></i> xcybersquad@gmail.com</p>
+                        </div>
+                        <div id="map" class="contact-map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mb-4">X Cyber Squad</h3>
+                    <p>Securing your digital assets with professional cybersecurity services.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2025 X Cyber Squad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+    <script src="script.js"></script>
+</body>
+</html>
